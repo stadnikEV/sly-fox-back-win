@@ -22,7 +22,7 @@
     "ejs": "^2.6.1",
     "express": "^4.16.3",
     "html-pdf": "^2.2.0",
-    "morgan": "^1.9.0",
+    "morgan": "^1.9.1",
     "petrovich": "^0.2.1",
     "phantomjs-prebuilt": "^2.1.16",
     "winston": "^3.0.0"
