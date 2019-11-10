@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+    body {
+      font: 16px 'Times New Roman';
+      font-weight: lighter;
+      margin: 0;
+      padding: 0;
+    }
+    .page {
+      margin: 0;
+      width: 792px;
+      height: 1120px;
+      border: solid 1px white;
+      background-color: white;
+      z-index: 1;
+    }
+    .header-wriper {
+      margin-left: 141px;
+      margin-top: 28px;
+      width: 616px;
+      height: 174px;
+    }
+    .сhurch-container {
+      height: 171px;
+      display: inline-block;
+      width: 146px;
+      vertical-align: top;
+    }
+    .сhurch {
+      width: 146px;
+    }
+
+    .header-text {
+      padding-left: 19px;
+      padding-top: 45px;
+      display: inline-block;
+      width: 410px;
+      height: 173px;
+      margin-left: 21px;
+      vertical-align: top;
+      text-align: center;
+      box-sizing: border-box;
+      letter-spacing: 0.3px;
+      border-bottom: solid 1px black;
+      line-height: 20px;
+      word-spacing: 0px;
+    }
+    .header-text-down {
+      font-size: 15px;
+      letter-spacing: 0px;
+    }
+    .data {
+      margin-top: 1px;
+      margin-left: 121px;
+      padding-left: 4px;
+      padding-right: 25px;
+      text-align: center;
+      width: 623px;
+      height: 108px;
+      box-sizing: border-box;
+      font-size: 15px;
+      line-height: 17px;
+      border-bottom: solid 1px black;
+      letter-spacing: 0.1px;
+    }
+    .time {
+      margin-left: 120px;
+      height: 12px;
+      font-size: 16px;
+    }
+    .name {
+      margin-left: 111px;
+      margin-right: 30px;
+      padding-top: 6px;
+      padding-left: 10px;
+      width: 618px;
+      font-size: 16px;
+      text-align: center;
+    }
+    .text {
+    	letter-spacing: 0.1px;
+      margin-left: 111px;
+     /* margin-right: 30px;*/
+      width: 621px;
+      font-size: 16px;
+      text-align: justify;
+      line-height: 118%;
+    }
+
+    .footer {
+      position: absolute;
+      margin-left: 109px;
+      margin-top: 19px;
+      z-index: 10;
+      line-height: 120%;
+    }
+    .stamp {
+      top: 933px;
+      left: 572px;
+      width: 187px;
+      transform: rotate(0deg);
+      z-index: 2;
+      position: absolute;
+    }
+    .signature {
+      top: 1008px;
+      left: 133px;
+      width: 401px;
+      transform: rotate(0deg);
+      z-index: 2;
+      position: absolute;
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <div class="header-wriper">
+      <div class="сhurch-container">
+        <img class="сhurch" src="images/церковь.jpg" alt="церковь" width="200px">
+      </div>
+      <div class="header-text">
+        МЕСТНАЯ РЕЛИГИОЗНАЯ ОРГАНИЗАЦИЯ </br> ПРАВОСЛАВНЫЙ  &nbsp;ПРИХОД</br>
+    <span class="header-text-down">ТРОИЦКОЙ ЦЕРКВИ С. КОНСТАНТИНОВКА</br> ПЕНЗЕНСКОГО РАЙОНА ПЕНЗЕНСКОЙ ОБЛАСТИ</br> ПЕНЗЕНСКОЙ ЕПАРХИИ РУССКОЙ ПРАВОСЛАВНОЙ</br> ЦЕРКВИ (МОСКОВСКИЙ  ПАТРИАРХАТ)</br></span>
+      </div>
+    </div>
+      <div class="data">
+        440516, Пензенская область Пензенский район, с. Константиновка, ул. Рабочая, 79А</br>
+ИНН 5829900034   &nbsp;&nbsp;КПП 582901001   &nbsp;&nbsp;ОГРН 1115800002504</br>
+р/с 40703810500010000241  &nbsp;&nbsp;ПАО Банк «Кузнецкий» г. Пенза БИК 045655707</br>
+корр/счет 30101810200000000707  назначение платежа: «Пожертвование».</br>
+Карта Сбербанк 5484480010616538  получатель: Иванов Сергей Николаевич</br>
+www.hram-konstantinovka.ru
+      </div>
+      <div class="time">
+      	 <!-- 05. 11. 2019г. -->
+         <%=day%>. <%=month%>. <%=year%>г.
+      </div>
+      <div class="name">
+        <%=gender%> <%=firstName%> <%=middleName%>!</br>
+      </div>
+      <div class="text">
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;В селе Константиновка Пензенского района положено начало восстановлению
+          жемчужины Пензенской области - Храма Живоначальной Троицы (в этом году храму
+          исполнилось 150 лет). Всё даётся с трудом. У нас нет больших помощников и
+          благотворителей, практически все восстановительные работы мы выполняем сами, но на
+          сердце огромная радость от того, как преображается храм – все новости о ходе
+          реставрационных работ и жизни прихода мы регулярно публикуем на нашем сайте:&nbsp;&nbsp;&nbsp;&nbsp;
+          hram-konstantinovka.ru. Сейчас при храме работают две Воскресные школы, количество
+          воспитанников увеличилось до 42 человек. Всех деток мы бесплатно обеспечиваем
+          необходимыми канцелярскими товарами для занятий, хотя это и очень сложно для
+          сельского прихода.</br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;На сегодняшний день полностью завершены кровельные работы над центральной
+          частью храма, установлено золотое пятиглавие, совершилось освящение 9-ти колоколов
+          для звонницы и восстановлена шатровая кровля на колокольне. На Троицу состоялось
+          освящение киота и главной алтарной иконы «Спас в силах». Средства на все эти работы
+          собирали «всем миром».</br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;В настоящее время мы завершили капитальный ремонт алтаря, притвора и входной
+          группы, восстановили богослужебный круг. Милостью Божией, частично обзавелись
+          церковной утварью, но еще не хватает незаменимых предметов для богослужения. По
+          древней традиции любое богослужение начинается с возжигания свечей. Возжигание
+          свечей в храме — это часть службы, это приношение жертвы Богу. Свеча есть также
+          свидетельство веры, причастности человека к Божественному свету. Свеча выражает
+          теплоту и пламень любви человека ко Господу.</b></br>
+          &nbsp;&nbsp;&nbsp;Для совершения богослужений нам необходимо <b>приобрести 4 напольных</b>
+          подсвечника. Стоимость <b>одного подсвечника – 25 000 руб.</b> В дни празднования 150-
+          летия храма обращаемся <b>к Вам с просьбой о помощи!</b></br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Если у Вас есть возможность, пожалуйста, окажите &nbsp;<b>ЛЮБУЮ</b> посильную помощь
+          в приобретении напольных подсвечников для Троицкого храма. Одному сельскому
+          приходу очень тяжело собрать такую сумму. Господь сторицею воздаст Вам за Вашу
+          милость!</br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>Имя каждого благотворителя будет обязательно выгравировано на золотой памятной табличке и занесено в храмовый синодик для вечного поминовения.</b></br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Храни Вас Бог!
+      </div>
+      <div class="footer">
+        Настоятель Троицкого храма с. Константиновка,</br>
+        священник Сергий Иванов</br>
+        тел.: +7 (937) 409-90-01 (отец Сергий)</br>
+      </div>
+  </div>
+  <img src="images/печать.png" alt="stamp" class="stamp">
+  <img src="images/подпись.png" alt="stamp" class="signature">
+  <script src="js/create-pdf.js"></script>
+</body>
+</html>

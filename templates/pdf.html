@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+    body {
+      font: 16px 'Times New Roman';
+      font-weight: lighter;
+      margin: 0;
+      padding: 0;
+    }
+    .page {
+      margin: 0;
+      width: 792px;
+      height: 1120px;
+      border: solid 1px white;
+      background-color: white;
+      z-index: 1;
+    }
+    .header-wriper {
+      margin-left: 141px;
+      margin-top: 28px;
+      width: 616px;
+      height: 174px;
+    }
+    .сhurch-container {
+      height: 171px;
+      display: inline-block;
+      width: 146px;
+      vertical-align: top;
+    }
+    .сhurch {
+      width: 146px;
+    }
+
+    .header-text {
+      padding-left: 19px;
+      padding-top: 45px;
+      display: inline-block;
+      width: 410px;
+      height: 173px;
+      margin-left: 21px;
+      vertical-align: top;
+      text-align: center;
+      box-sizing: border-box;
+      letter-spacing: 0.3px;
+      border-bottom: solid 1px black;
+      line-height: 20px;
+      word-spacing: 0px;
+    }
+    .header-text-down {
+      font-size: 15px;
+      letter-spacing: 0px;
+    }
+    .data {
+      margin-top: 1px;
+      margin-left: 121px;
+      padding-left: 4px;
+      padding-right: 25px;
+      text-align: center;
+      width: 623px;
+      height: 108px;
+      box-sizing: border-box;
+      font-size: 15px;
+      line-height: 17px;
+      border-bottom: solid 1px black;
+      letter-spacing: 0.1px;
+    }
+    .time {
+      margin-left: 120px;
+      height: 12px;
+      font-size: 16px;
+    }
+    .name {
+      margin-left: 111px;
+      margin-right: 30px;
+      padding-top: 24px;
+      padding-left: 10px;
+      width: 618px;
+      font-size: 16px;
+      text-align: center;
+    }
+    .text {
+    	letter-spacing: 0.1px;
+      margin-left: 111px;
+     /* margin-right: 30px;*/
+      width: 620px;
+      font-size: 16px;
+      text-align: justify;
+      line-height: 118%;
+    }
+
+    .footer {
+      position: absolute;
+      margin-left: 109px;
+      margin-top: 54px;
+      z-index: 10;
+      line-height: 120%;
+    }
+    .stamp {
+      top: 934px;
+      left: 530px;
+      width: 172px;
+      transform: rotate(0deg);
+      position: absolute;
+    }
+    .signature {
+      top: 969px;
+      left: 132px;
+      width: 384px;
+      transform: rotate(0deg);
+      z-index: 2;
+      position: absolute;
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <div class="header-wriper">
+      <div class="сhurch-container">
+        <img class="сhurch" src="images/церковь.jpg" alt="церковь" width="200px">
+      </div>
+      <div class="header-text">
+        МЕСТНАЯ РЕЛИГИОЗНАЯ ОРГАНИЗАЦИЯ </br> ПРАВОСЛАВНЫЙ  &nbsp;ПРИХОД</br>
+    <span class="header-text-down">ТРОИЦКОЙ ЦЕРКВИ С. КОНСТАНТИНОВКА</br> ПЕНЗЕНСКОГО РАЙОНА ПЕНЗЕНСКОЙ ОБЛАСТИ</br> ПЕНЗЕНСКОЙ ЕПАРХИИ РУССКОЙ ПРАВОСЛАВНОЙ</br> ЦЕРКВИ (МОСКОВСКИЙ  ПАТРИАРХАТ)</br></span>
+      </div>
+    </div>
+      <div class="data">
+        440516, Пензенская область Пензенский район, с. Константиновка, ул. Рабочая, 79А</br>
+ИНН 5829900034   &nbsp;&nbsp;КПП 582901001   &nbsp;&nbsp;ОГРН 1115800002504</br>
+р/с 40703810500010000241  &nbsp;&nbsp;ПАО Банк «Кузнецкий» г. Пенза БИК 045655707</br>
+корр/счет 30101810200000000707</br>
+Карта Сбербанк 5484480010616538  получатель: Иванов Сергей Николаевич</br>
+www.hram-konstantinovka.ru
+      </div>
+      <div class="time">
+      	 <!-- 12. 03. 2019г. -->
+         <%=day%>. <%=month%>. <%=year%>г.
+      </div>
+      <div class="name">
+        <%=gender%> <%=firstName%> <%=middleName%>!
+      </div>
+      <div class="text">
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;В селе Константиновка Пензенского района положено начало восстановлению
+          жемчужины Пензенской области - Храма Живоначальной Троицы (1786 г.). Всё даётся с
+          трудом. У нас нет больших помощников и благотворителей, практически все
+          восстановительные работы мы выполняем сами, но на сердце огромная радость от того,
+          как преобразился храм за эти два года! Сегодня при храме работают две Воскресные
+          школы, количество воспитанников увеличилось до 42 человек. Всех деток мы бесплатно
+          обеспечиваем необходимыми канцелярскими товарами для занятий, хотя это и очень
+          сложно для сельского храма.</br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;На сегодняшний день полностью завершены кровельные работы над центральной
+          частью храма, установлено золотое пятиглавие, совершилось освящение 9-ти колоколов
+          для звонницы и в конце декабря восстановлена шатровая кровля на колокольне. Средства
+          на все эти работы собирали «всем миром».</br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;В настоящее время мы приступили к восстановлению внутреннего облика алтарной
+          части храма. По древней традиции на Горнем месте в алтаре помещается икона «Спас в
+          силах» как прообраз грядущего Царствия Божия. В нашем храме на восточной стене
+          сохранилась ниша, где изначально находилась эта икона. (Фотографии есть на главной
+          странице нашего сайта). Ее точный размер 2910*880 мм. На написание иконы и
+          изготовления киота необходимо 92 000 руб. Временно на этом месте мы поместили
+          тонкий холст с ее изображением, <b>и обращаемся к Вам за помощью.</b> </br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Если &nbsp;у &nbsp;Вас &nbsp;есть возможность, пожалуйста, окажите <b>ЛЮБУЮ</b> посильную помощь
+          в приобретении главной алтарной иконы «Спас в силах». Одному сельскому приходу
+          очень тяжело собрать такую сумму.</br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Во &nbsp;&nbsp;время &nbsp;&nbsp;Великого &nbsp;&nbsp;Поста &nbsp;&nbsp;святая &nbsp;&nbsp;Церковь &nbsp;&nbsp;нас &nbsp;&nbsp;особенно &nbsp;призывает  &nbsp;к  &nbsp;делам</br>
+          милосердия. «Милостыня, растворенная постом, от смерти избавляет человека!»</br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>Имя каждого благотворителя будет обязательно выгравировано на золотой памятной табличке и занесено в храмовый синодик для вечного поминовения.</b></br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Храни Вас Бог!
+      </div>
+      <div class="footer">
+        Настоятель Троицкого храма с. Константиновка,</br>
+        председатель Приходского совета, </br>
+        священник Сергий Иванов</br>
+        тел.: +7 (937) 409-90-01
+      </div>
+      <img src="images/печать.png" alt="stamp" class="stamp">
+      <img src="images/подпись.png" alt="stamp" class="signature">
+      <script src="js/create-pdf.js"></script>
+  </div>
+</body>
+</html>
