@@ -21,7 +21,7 @@
     "body-parser": "^1.18.3",
     "ejs": "^2.6.1",
     "express": "^4.16.3",
-    "html-pdf": "^2.2.0",
+    "html-pdf": "^3.0.1",
     "morgan": "^1.9.0",
     "petrovich": "^0.2.1",
     "phantomjs-prebuilt": "^2.1.16",
